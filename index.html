@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Meu Portfólio</a>
+      <ul class="nav-menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="https://lucas-olegario.github.io/Jogo-da-Memoria/">Jogo da Memória</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+      <h1>Bem-vindo ao meu portfólio</h1>
+      <img src="img/foto.png" alt="Minha Foto" class="foto-perfil" />
+      <p class="introducao">Meu nome é Lucas e sou um estudante de desenvolvimento web, apaixonado por tecnologia e sempre em busca de novos aprendizados. Este portfólio reúne alguns dos meus mais atuais projetos, caso interresado me contate.</p>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="card-container">
+        <a href="https://lucas-olegario.github.io/app-desenho/" class="card" target="_blank">
+          <img src="img/personagem.jpeg" alt="Projeto 1">
+          <div class="card-body">
+            <h3>Adivinhe o Personagem</h3>
+            <p>Tente adivinhar o personagem do jogo Brawl Stars</p>
+          </div>
+        </a>
+
+        <a href="https://lucas-olegario.github.io/gasolina/" class="card" target="_blank">
+          <img src="img/posto.jpg" alt="Projeto 2">
+          <div class="card-body">
+            <h3>Calculo Combustivel</h3>
+            <p>Calcule qual combustivel está mais econômico</p>
+          </div>
+        </a>
+
+        <a href="https://lucas-olegario.github.io/cadastro-clientes/" class="card" target="_blank">
+          <img src="img/cadastro.png" alt="Projeto 3">
+          <div class="card-body">
+            <h3>Filtro de Clientes</h3>
+            <p>Faça o cadastro de novos clientes</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form id="formContato">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="msgStatus"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
